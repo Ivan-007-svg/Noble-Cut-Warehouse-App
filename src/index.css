@@ -1,0 +1,48 @@
+/* src/index.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  background-color: #000;
+  color: gold;
+  line-height: 1.5;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+button, select, input {
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #111;
+  font-weight: bold;
+  border-bottom: 1px solid gold;
+}
+
+td {
+  border-bottom: 1px solid #333;
+}
+
+input::placeholder {
+  color: #ccc;
+}

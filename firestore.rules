@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /fabricRolls/{docId} {
+      allow read, write: if true; // 🔓 Dev mode: allow all access
+    }
+
+    match /orderReservations/{docId} {
+      allow read: if true;
+      allow write: if false; // Read-only for warehouse app
+    }
+  }
+}
